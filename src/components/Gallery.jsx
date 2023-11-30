@@ -1,19 +1,21 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import HornedBeast from './HornedBeastOne.jsx'
-import BeastData from '../data.json'
+
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 
 
-function Gallery() {
-    console.log(BeastData);
+function Gallery(props) {
+
     return (
         <Container>
             <Row xs={true}md={true}>
 
             {
-                BeastData.map((eachBeast,i) =>
+                
+                props.allBeast.map((eachBeast,i) =>
                 <HornedBeast 
                 key={i}
                 id={eachBeast._id}

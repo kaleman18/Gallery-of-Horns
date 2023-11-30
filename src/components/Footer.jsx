@@ -3,7 +3,7 @@ import React from 'react'
 
 function Footer() {
     return (
-        <div>stuff</div>
+        <div style = {{textAlign: 'center'}}>Here is my <a href='https://www.linkedin.com/in/kyle-aleman/'>Linkedin!</a></div>
     )
 }
 

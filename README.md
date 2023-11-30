@@ -11,35 +11,13 @@ Currently, two official plugins are available:
 
 <!-- -------------------------------------------------------------------------------------------- -->
 
-Number and name of feature: Feature #1: Display Images
+Number and name of feature: Feature #1: Display a Modal
 
 Estimate of time needed to complete: 1.5 Hours
 
-Start time: 12:20
+Start time: 1:30
 
-Finish time: 01:35
+Finish time: 5:30
 
-Actual time needed to complete: 1 hour and 15 minutes
+Actual time needed to complete: 4 hours
 <!-- -------------------------------------------------------------------------------------------- -->
-Number and name of feature: Feature #2: Allow Users to Favorite Individual Beasts
-
-Estimate of time needed to complete: 2 hours
-
-Start time: 02:45
-
-Finish time: 3:20
-
-Actual time needed to complete: 35 minutes
-
-<!-- -------------------------------------------------------------------------------------------- -->
-Number and name of feature: Feature 3: Bootstrap
-
-Estimate of time needed to complete: 2 hours
-
-Start time: 3:30
-
-Finish time: 4:30
-
-Actual time needed to complete: 1 hour
-<!-- -------------------------------------------------------------------------------------------- -->
-
