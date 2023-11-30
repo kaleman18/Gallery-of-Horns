@@ -3,8 +3,8 @@ import React from 'react'
 
 function Header() {
     return (
-        <h1>
-            Place Holder
+        <h1 style = {{textAlign: 'center'}}>
+            Horned Beast
         </h1>
     )
 }

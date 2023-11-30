@@ -3,17 +3,23 @@
 import React,{useState} from 'react';
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
+import SelectedBeast from './SelectedBeast'
+
+  
 
 function HornedBeast(props) {
     const [favorite, setFavorite] = useState(0)
+    const [show, setShow]= useState(false)
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
+
     return (
-      <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" onClick={() => setFavorite(favorite + 1)} src={props.img} alt="Horned Beasts" />
+      <>
+      <Card style={{ width: '18rem'}}>
+        <Card.Img variant="top" style={{margin: '5px'}} onClick={() => {setFavorite(favorite + 1);handleShow()}} src={props.img} alt="Horned Beasts" />
         <Card.Body>
           <Card.Title>{props.title}</Card.Title>
-          <Card.Text>
-          {props.description}
-          </Card.Text>
         </Card.Body>
         <ListGroup className="list-group-flush">
           <ListGroup.Item>{`❤️ ${favorite}`}</ListGroup.Item>
@@ -21,6 +27,15 @@ function HornedBeast(props) {
           <ListGroup.Item>KeyWord: {`${props.keyword}`}</ListGroup.Item>
         </ListGroup>
       </Card>
+      <SelectedBeast
+      title={props.title}
+      img={props.img}
+      description = {props.description}
+      handleClose= {handleClose}
+      show={show}
+      />
+      </>
+      
     );
   }
 
