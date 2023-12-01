@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import HornedBeast from './HornedBeastOne.jsx'
-
+import FilterBeast from './FilterBeast.jsx'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 
@@ -11,10 +11,11 @@ function Gallery(props) {
 
     return (
         <Container>
+            <FilterBeast
+                allBeasts = {props.allBeast}
+            />
             <Row xs={true}md={true}>
-
             {
-                
                 props.allBeast.map((eachBeast,i) =>
                 <HornedBeast 
                 key={i}
@@ -30,6 +31,7 @@ function Gallery(props) {
             </Row>
             
         </Container>
+        
     )
 }
 
