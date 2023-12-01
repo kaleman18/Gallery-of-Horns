@@ -15,26 +15,6 @@ function App() {
   const[beast, setBeast] = useState(Data);
 
 
-  // function modalBeast(beastTitle){
-  //   let clickedBeast;
-  //   beast.forEach(obj => {
-  //     if(obj.title === beastTitle){
-  //     clickedBeast = [obj.description, obj.image_url]
-
-  //     }
-  //   })
-    
-  //   setrenderBeast(clickedBeast)
-  //   console.log(renderBeast)
-  //   return clickedBeast;
-  // }
-
-    
-
-
-
-
-
   return(
     <>
     <Header/>
